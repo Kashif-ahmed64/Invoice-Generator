@@ -8,18 +8,6 @@ const InvoiceItem = ({ id, name, qty, price, onDeleteItem, onEdtiItem }) => {
 
   return (
     <tr>
-      <td className="w-full">
-        <InvoiceField
-          onEditItem={(event) => onEdtiItem(event)}
-          cellData={{
-            placeholder: 'Item name',
-            type: 'text',
-            name: 'name',
-            id: id,
-            value: name,
-          }}
-        />
-      </td>
       <td className="min-w-[65px] md:min-w-[80px]">
         <InvoiceField
           onEditItem={(event) => onEdtiItem(event)}
