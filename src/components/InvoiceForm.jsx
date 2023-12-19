@@ -9,7 +9,7 @@ const today = date.toLocaleDateString('en-GB', {
   day: 'numeric',
   year: 'numeric',
 });
-
+//form
 const InvoiceForm = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [discount, setDiscount] = useState('');
